@@ -7,5 +7,4 @@ console.log('Aes.Ctr.encrypt: ' + x.base64Decode()); // encr: 'lwGl66VVwVOb
 
 let y = Aes.Ctr.decrypt('lwGl66VVwVObKIr6of8HVqJr', 'pāşšŵōřđ', 256);
 
-console.log('Aes.Ctr.decrypt: ' + y); 
-// decr: 'big secret'
+console.log('Aes.Ctr.decrypt: ' + y);
