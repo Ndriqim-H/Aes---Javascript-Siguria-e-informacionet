@@ -59,10 +59,10 @@ Aes.Ctr.encrypt = function(plaintext, password, nBits) {
     var nonceRnd = Math.floor(Math.random()*0xffff);
     // for debugging: nonce = nonceMs = nonceSec = nonceRnd = 0;
 
-    nonce = 0;
-    nonceMs = 0;
-    nonceSec = 0;
-    nonceRnd = 0;
+    // nonce = 0;
+    // nonceMs = 0;
+    // nonceSec = 0;
+    // nonceRnd = 0;
 
     for (var i=0; i<2; i++) counterBlock[i]   = (nonceMs  >>> i*8) & 0xff;
     for (var i=0; i<2; i++) counterBlock[i+2] = (nonceRnd >>> i*8) & 0xff;
